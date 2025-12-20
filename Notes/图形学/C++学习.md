@@ -82,8 +82,8 @@ mindmap-plugin: basic
             - 转换函数
                 - 字符串转整型stoi()
                 - 字符串转双精度stod()
-                - 字符串转化为float类型  stof（）
-                - 字符串转换为long long类型  stoll ()
+                - 字符串转化为float类型  stof（）
+                - 字符串转换为long long类型  stoll ()
         - 数字转换成字符
             - 转换成函数
                 - to_string()
@@ -92,8 +92,15 @@ mindmap-plugin: basic
         - string.find()
         - string.replace(查找的起始位置，被替换内容的长度，新字符内容)
 - 枚举
-    - C++之前的枚举
-    - C++之后的枚举
+    - C++11之前的枚举
+        - 默认从0开始自增
+        - 方括号包起来，然后以分号结尾
+        - 访问方式
+            - 枚举名字 var{枚举值1}
+            - if（var==枚举值1）
+            - cout<<枚举值1<<em=endl;
+    - C++11之后的枚举
+        - 新节点
 - main函数参数传递
 - 案例
     - 日志模块
