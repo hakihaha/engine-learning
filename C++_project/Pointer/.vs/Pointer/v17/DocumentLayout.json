@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Gitub\\engine-learning\\C\u002B\u002B_project\\Pointer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1F892D04-2D61-4279-B62D-3E92415C2946}|Pointer.vcxproj|D:\\Gitub\\engine-learning\\C\u002B\u002B_project\\Pointer\\Lambda_main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1F892D04-2D61-4279-B62D-3E92415C2946}|Pointer.vcxproj|solutionrelative:Lambda_main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1F892D04-2D61-4279-B62D-3E92415C2946}|Pointer.vcxproj|D:\\Gitub\\engine-learning\\C\u002B\u002B_project\\Pointer\\Pointer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1F892D04-2D61-4279-B62D-3E92415C2946}|Pointer.vcxproj|solutionrelative:Pointer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -19,12 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Lambda_main.cpp",
+              "DocumentMoniker": "D:\\Gitub\\engine-learning\\C\u002B\u002B_project\\Pointer\\Lambda_main.cpp",
+              "RelativeDocumentMoniker": "Lambda_main.cpp",
+              "ToolTip": "D:\\Gitub\\engine-learning\\C\u002B\u002B_project\\Pointer\\Lambda_main.cpp",
+              "RelativeToolTip": "Lambda_main.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-30T14:47:36.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Pointer.cpp",
               "DocumentMoniker": "D:\\Gitub\\engine-learning\\C\u002B\u002B_project\\Pointer\\Pointer.cpp",
               "RelativeDocumentMoniker": "Pointer.cpp",
               "ToolTip": "D:\\Gitub\\engine-learning\\C\u002B\u002B_project\\Pointer\\Pointer.cpp",
               "RelativeToolTip": "Pointer.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-12-23T13:33:51.87Z",
               "EditorCaption": ""

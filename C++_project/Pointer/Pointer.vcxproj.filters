@@ -18,5 +18,8 @@
     <ClCompile Include="Pointer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Lambda_main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
