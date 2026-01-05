@@ -2,6 +2,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include<ctime>
+#include<vector>
 using namespace std;
 
 /*C++引用
@@ -74,6 +75,7 @@ struct Books
 
 };
 //打印书籍信息的函数，接收一个指向Books结构体的指针
+//在函数内部，我们使用->操作符去访问结构指针所指向的成员变量
 void printBookInfo(const Books* book)
 {
 	cout << "书籍标题" << book->title << endl;
@@ -95,6 +97,118 @@ void TestStructPointer()
 	printBookInfo(ptrBook2);
 
 }
+//C++vector容器
+// 动态大小
+// 连续储存
+// 可迭代
+// 元素类型
+//myVector.push_back()//添加元素
+// std::vector<int>myVector(5)//创建一个包含五个整数的vector，每个默认值为0
+// std::vector<int>myVector(5，10)//创建一个包含五个整数的vector，每个默认值为10
+// for(auto it = myVector.begin();it != myVector.end();++i){std::out<<*it<<"":}//遍历访问
+//示例
+int TestVector()
+{
+	//需要提前#include<vector>
+	//创建一个空整数向量
+	std::vector<int>myVector;
+	//添加元素到向量中
+	myVector.push_back(3);
+	myVector.push_back(7);
+	myVector.push_back(11);
+	myVector.push_back(5);
+	//访问向量中的元素并输出
+	std::cout << "Elements in the vector";
+	for (int element : myVector)  //使用迭代器访问
+	{
+		std::cout << element << " ";
+	}
+	std::cout << std::endl;
+	//访问向量种的第一个元素并输出
+	std::cout << "First element:" << myVector[0] << std::endl;
+	//访问向量种的第二个元素并输出
+	std::cout << "Scond element:" << myVector[1] << std::endl;
+	//获取向量大小并输出
+	std::cout << "size of the vector" << myVector.size() << std::endl;
+	//删除向量中的第三个元素
+	myVector.erase(myVector.begin() + 2);
+	//输出删除元素后的向量
+	std::cout << "删除后的向量内容：";
+	for (int element : myVector)  //使用迭代器访问
+	{
+		std::cout << element << " ";
+	}
+	std::cout << std::endl;
+	//清除向量并输出
+	myVector.clear();
+	std::cout << "size of the vector after clearing:" << myVector.size() << std::endl;
+	return 0;
+	
+}
+/*数据结构暂时还不懂*/
+/*C++类于对象
+* 需要理解的是
+* 类访问修饰符
+* 构造函数
+* 析构函数
+* 拷贝构造函数
+* 友元函数
+* 内联函数
+* this指针
+* 指向类的指针
+* 静态成员
+示例*/
+//示例
+class Box
+{
+	public:
+		double length;
+		double breadth;
+		double heigth;
+		//成员函数声明
+		double get(void);
+		void set(double len, double bre, double hei);
+};
+//成员函数定义
+double Box::get(void)
+{
+	return length * breadth * heigth;
+}
+void Box::set(double len, double bre, double hei)
+{
+	length = len;
+	breadth = bre;
+	heigth = hei;
+}
+void TestClass()
+{
+	Box Box1;  //声明Box1,类型为Box
+	Box Box2;
+	Box Box3;
+	double volume = 0.0;
+	//box 1详述
+	Box1.heigth = 5.0;
+	Box1.breadth = 6.0;
+	Box1.length = 7.0;
+
+	Box2.heigth = 10.0;
+	Box2.breadth = 11.0;
+	Box2.length = 12.0;
+
+	volume = Box1.heigth * Box1.breadth * Box1.length;
+	cout << "Box1的体积是：" << volume << endl;
+
+	volume = Box2.heigth * Box2.breadth * Box2.length;
+	cout << "Box2的体积是：" << volume << endl;
+
+	Box3.set(16.0, 8.0, 12.0);
+	volume = Box3.get();
+	cout << "Box3的体积是：" << volume << endl;
+
+
+}
+
+
 
 int main()
 {
@@ -102,6 +216,8 @@ int main()
 	//TestTime();//时间函数
 	//TestLog();//标准错误日志，标准日志流程函数
 	//TestStructPointer();//指向结构的指针
+	//TestVector();//vector的用法
+	TestClass();
 }
 
 
