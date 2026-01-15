@@ -1,0 +1,5 @@
+.vscode/
+.idea/
+.obsidian/*
+.obsidian/plugins/
+!.obsidian/plugins/*
